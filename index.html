@@ -17,7 +17,7 @@
     <header>
       <div class="container">
         <div class="navbar">
-          <div class="navbar__logo">
+          <div class="logo">
             <a href="#">Pink<span>Melon</span></a>
           </div>
           <nav class="navbar__menu">
@@ -99,11 +99,15 @@
           <h1 class="title">Contact me through email</h1>
 
           <form class="contact-section">
-            <label for="email" class="label-form">Email: </label>
-            <input type="text" class="input" name="email" />
+            <div class="form-column">
+              <label for="email" class="label-form">Email: </label>
+              <input type="text" class="input" name="email" />
+            </div>
 
-            <label for="subject" class="label-form">Subject: </label>
-            <input type="text" class="input" name="subject" />
+            <div class="form-column">
+              <label for="subject" class="label-form">Subject: </label>
+              <input type="text" class="input" name="subject" />
+            </div>
 
             <textarea class="input message" placeholder="Message..."></textarea>
             <button class="button">Send</button>
@@ -113,7 +117,11 @@
     </main>
     <!-- Main End -->
     <!-- Footer Start  -->
-    <footer>Pink Melon</footer>
+    <footer class="footer">
+      <div class="logo">
+        <a href="#">Pink<span>Melon</span></a>
+      </div>
+    </footer>
     <!-- Footer End  -->
   </body>
 </html>
