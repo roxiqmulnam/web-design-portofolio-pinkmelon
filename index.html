@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body
+    style="
+      background-image: url(./public/img/block_pink.svg);
+      background-repeat: no-repeat;
+    "
+  >
+    <!-- Header Start -->
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar__logo">
+            <a href="#">Pink<span>Melon</span></a>
+          </div>
+          <nav class="navbar__menu">
+            <ul>
+              <li><a class="text-desc" href="works.html">Works</a></li>
+              <li><a class="text-desc" href="#about">About Me</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <!-- Hero Start -->
+    <section id="home">
+      <div class="container">
+        <div class="hero-section">
+          <div class="hero-section__left">
+            <h1>Hello There!</h1>
+            <h2>
+              I'm <span>PinkMelon, a 2D Artist.</span>
+              <br />
+              I really love to draw human portraits, also do pixels, sprite, and
+              design too!
+            </h2>
+            <h3>Talk to me personally?</h3>
+            <a href="#contact">
+              <button class="button">Send me Email</button>
+            </a>
+          </div>
+          <div class="hero-section__right">
+            <img class="hero-image" src="./public/img/hero.jpg" alt="img" />
+          </div>
+        </div>
+        <div class="highlight-section">
+          <h1 class="title">Highlight Works</h1>
+          <div class="highlight-section__item">
+            <img class="item" src="./public/img/pict-1.png" alt="img" />
+            <img class="item" src="./public/img/pict-1.png" alt="img" />
+            <img class="item" src="./public/img/pict-1.png" alt="img" />
+            <img class="item" src="./public/img/pict-1.png" alt="img" />
+          </div>
+          <a href="works.html">
+            <button class="button">More</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Hero End -->
+    <!-- Main Start -->
+    <main>
+      <section id="about">
+        <div class="container">
+          <h1 class="title">About Me</h1>
+          <div class="about-section">
+            <div class="about-section__left">
+              <img class="about-image" src="./public/img/pp.svg" alt="img" />
+            </div>
+            <div class="about-section__right">
+              <h2>Hello i'm <span>PinkMelon.</span></h2>
+              <br />
+              <h2>2D Artist, based on Indonesia.</h2>
+              <br />
+              <h2>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                laoreet urna sit amet justo vehicula, eget malesuada nisi
+                tempus. Nulla facilisi. Sed nisl lacus, consequat in varius in,
+                rhoncus vitae quam.
+              </h2>
+              <h3>Follow me through:</h3>
+              <img class="item" src="./public/img/twitter.svg" alt="img" />
+              <img class="item" src="./public/img/Instagram.svg" alt="img" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h1 class="title">Contact me through email</h1>
+
+          <form class="contact-section">
+            <label for="email" class="label-form">Email: </label>
+            <input type="text" class="input" name="email" />
+
+            <label for="subject" class="label-form">Subject: </label>
+            <input type="text" class="input" name="subject" />
+
+            <textarea class="input message" placeholder="Message..."></textarea>
+            <button class="button">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Main End -->
+    <!-- Footer Start  -->
+    <footer>Pink Melon</footer>
+    <!-- Footer End  -->
+  </body>
+</html>
