@@ -1,0 +1,41 @@
+@media screen and (max-width: 1020px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  section {
+    margin: 50px 0;
+  }
+  .hero-section__left {
+    width: 100%;
+  }
+  .hero-image {
+    display: block;
+    margin: 50px 0;
+  }
+  .hero-section {
+    display: block;
+    margin: 150px 0;
+  }
+  .contact-section {
+    width: 100%;
+    background: var(--secondary-color);
+    border-radius: 30px;
+    padding: 20px 25px;
+    margin: 0 auto;
+  }
+  .form-column {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .input {
+    width: 100%;
+  }
+  .message {
+    height: 140px;
+  }
+}
