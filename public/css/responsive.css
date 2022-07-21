@@ -2,6 +2,13 @@
   .container {
     padding: 0 25px;
   }
+  .highlight-section__item .item {
+    margin: 50px;
+    width: 300px;
+  }
+  .contact-section {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -19,6 +26,7 @@
     display: block;
     margin: 150px 0;
   }
+
   .contact-section {
     width: 100%;
     background: var(--secondary-color);
