@@ -57,7 +57,7 @@ section {
 header {
   background: var(--secondary-color);
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 10;
 }
@@ -253,7 +253,7 @@ header {
   background: var(--font-color-pink);
   border: 0px;
   outline: none;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 20px;
   color: var(--font-color-pink-bold);
 }
