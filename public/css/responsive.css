@@ -11,14 +11,14 @@
     padding: 0 25px;
   }
   section {
-    margin: 0 0 50px 0;
+    margin: 50px 0;
   }
   nav {
     position: sticky;
     padding: 10px 0;
   }
   .navbar__menu {
-    padding: 20px 30px;
+    padding: 20px 25px;
   }
   .mobile-navbar {
     position: absolute;
