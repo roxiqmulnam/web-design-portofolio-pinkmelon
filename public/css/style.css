@@ -1,7 +1,7 @@
 /* GLOBAL */
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Poppins:wght@200;400;500&display=swap");
 
-@import url('./responsive.css') (max-width: 1020px);
+@import url("./responsive.css") (max-width: 1020px);
 
 :root {
   --primary-color: #fff1eb;
@@ -19,7 +19,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "Poppins", sans-serif;
-  scroll-margin-top: 5.5rem;
+  scroll-margin-top: 6rem;
 }
 /* GLOBAL--text */
 
@@ -39,7 +39,6 @@
   color: var(--font-color-green-bold);
 }
 /* GLOBAL--text */
-
 body {
   background: var(--primary-color);
   overflow-x: hidden;
@@ -47,13 +46,11 @@ body {
 section {
   margin: 100px 0;
 }
-
 .container {
   padding: 0 100px;
   margin: 0 auto;
   max-width: 1440px;
 }
-
 header {
   background: var(--secondary-color);
   width: 100%;
@@ -61,13 +58,30 @@ header {
   top: 0;
   z-index: 10;
 }
-
-.navbar {
+.navbar__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 100px;
 }
-
+.mobile-navbar {
+  display: flex;
+}
+.mobile-navbar a {
+  color: black;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin: 20px 25px;
+}
+.btn-mobile-navbar {
+  display: none;
+}
+.btn-mobile-navbar div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
 .logo {
   font-size: 30px;
 }
@@ -79,15 +93,6 @@ header {
   color: var(--font-color-pink-bold);
   font-family: "Fredoka", sans-serif;
 }
-
-.navbar__menu ul {
-  display: flex;
-}
-
-.navbar__menu ul li {
-  margin: 20px 25px;
-}
-
 .button {
   padding: 10px;
   border-radius: 25px;
@@ -118,44 +123,37 @@ header {
 .hero-section__left {
   width: 55%;
 }
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section span {
+  font-size: calc(1rem + 1.1vw);
+}
 .hero-section h1 {
-  font-size: 40px;
   font-weight: bolder;
   color: var(--font-color-green-bold);
   margin-bottom: 25px;
 }
-
 .hero-section h2 {
-  font-size: 34px;
   font-weight: 500;
   color: var(--font-color-pink);
   margin-bottom: 40px;
 }
-
 .hero-section span {
-  font-size: 34px;
   font-weight: 500;
   color: var(--font-color-pink-bold);
 }
-
 .hero-section h3 {
-  font-size: 25px;
   font-weight: 300;
   color: var(--font-color-pink);
   margin-bottom: 12px;
 }
-
 .hero-image {
   width: 320px;
   height: 320px;
   border-radius: 100px;
   object-fit: cover;
 }
-
-.highlight-section {
-  padding: 0;
-}
-
 .highlight-section__item {
   display: flex;
   justify-content: space-between;
@@ -169,6 +167,45 @@ header {
   width: auto;
   margin: 0 auto;
   display: block;
+}
+.slider-wrap {
+  display: inline-block;
+  width: 100%;
+}
+.slider-main {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item img {
+  height: 25vh;
+  border-radius: 25px;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+.item img:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+}
+.btn-area {
+  width: 99%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.prev,
+.next {
+  width: 35px;
+  height: 35px;
+  z-index: 2;
+  cursor: pointer;
 }
 
 /* HERO-SECTION  */
@@ -192,36 +229,34 @@ header {
   display: inline;
   width: 40%;
 }
-.about-section__right .item {
+.about-section__right .icon {
   margin: 0 10px;
   width: 80px;
 }
+.about-section h1,
+.about-section h2,
+.about-section h3,
+.about-section span {
+  font-size: calc(1.15rem + 0.4vw);
+}
 .about-section h1 {
-  font-size: 40px;
   font-weight: bolder;
   color: var(--font-color-green-bold);
   margin-bottom: 25px;
 }
-
 .about-section h2 {
-  font-size: 24px;
   font-weight: 400;
   color: var(--font-color-green);
 }
-
 .about-section span {
   font-weight: 600;
-  font-size: 24px;
   color: var(--font-color-green);
 }
-
 .about-section h3 {
-  font-size: 24px;
   font-weight: 400;
   color: var(--font-color-green);
   margin: 20px 0 10px 0;
 }
-
 .about-image {
   margin-bottom: 50px;
 }
@@ -306,7 +341,7 @@ header {
 .detail {
   width: 100%;
   height: 450px;
-  object-fit:cover;
+  object-fit: cover;
   object-position: 0 40%;
   border-radius: 25px;
   margin: 30px 0;
@@ -327,7 +362,7 @@ header {
 
 .item-details .button {
   width: auto;
-  padding:0 15px;
+  padding: 0 15px;
   position: absolute;
   right: 0;
 }
@@ -343,4 +378,3 @@ header {
   align-items: center;
 }
 /* FOOTER  */
-

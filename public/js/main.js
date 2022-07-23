@@ -1,13 +1,14 @@
 // slider 
-// var sliderMain = document.getElementById('slider-main')
-// var item = sliderMain.getElementsByClassName('items')
-// function next() {
-//     sliderMain.append(item[0]);
-// }
-// function prev() {
-//     sliderMain.prepend(item[item.length - 1]);
-// }
+var sliderMain = document.getElementById('slider-main')
+var item = sliderMain.getElementsByClassName('item')
+function next() {
+    sliderMain.append(item[0]);
+}
+function prev() {
+    sliderMain.prepend(item[item.length - 1]);
+}
 
+// mobile navbar 
 const mobileMenu = document.querySelector(".btn-mobile-navbar");
 const linkNavbar = document.querySelector(".mobile-navbar");
 
