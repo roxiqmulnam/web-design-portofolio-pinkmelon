@@ -23,9 +23,9 @@
   .mobile-navbar {
     position: absolute;
     right: 0;
-    top: 0;
-    width: 200px;
-    height: 60vh;
+    top: 80%;
+    width: 160px;
+    height: 200px;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: var(--font-color-green);
@@ -86,6 +86,14 @@
   .about-image {
     margin-bottom: 20px;
     height: 300px;
+  }
+  .about-section__left {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .about-section__right {
+    width: 100%;
   }
   .about-section__right .item {
     margin: 0 20px 0 0;

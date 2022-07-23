@@ -230,7 +230,7 @@ header {
   width: 40%;
 }
 .about-section__right .icon {
-  margin: 0 10px;
+  margin-right: 10px;
   width: 80px;
 }
 .about-section h1,
