@@ -1,8 +1,6 @@
 /* GLOBAL */
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Poppins:wght@200;400;500&display=swap");
 
-@import url("./responsive.css") (max-width: 1020px);
-
 :root {
   --primary-color: #fff1eb;
   --secondary-color: #ffd5c2;
@@ -154,60 +152,35 @@ header {
   border-radius: 100px;
   object-fit: cover;
 }
-.highlight-section__item {
-  display: flex;
-  justify-content: space-between;
-}
-.highlight-section__item .item {
-  margin: 0 0 80px;
-  width: 200px;
-}
-
-.highlight-section .button {
-  width: auto;
-  margin: 0 auto;
-  display: block;
+.highlight-works {
+  position: relative;
+  height: 35vh;
+  overflow: hidden;
+  cursor: grab;
+  margin: 100px 0 50px 0;
 }
 .slider-wrap {
-  display: inline-block;
-  width: 100%;
-}
-.slider-main {
+  position: absolute;
+  top: 50;
+  left: 0;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
-  margin: 0 auto;
-}
-.item {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  pointer-events: none;
 }
 .item img {
   height: 25vh;
   border-radius: 25px;
   object-fit: cover;
-  filter: brightness(60%);
+  margin-right: 80px;
 }
-.item img:hover {
-  filter: brightness(80%);
-  cursor: pointer;
-}
-.btn-area {
-  width: 99%;
-  margin: 0 auto;
+.btn-more {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.prev,
-.next {
-  width: 35px;
-  height: 35px;
-  z-index: 2;
-  cursor: pointer;
+.btn-more .button {
+  width: auto;
 }
-
 /* HERO-SECTION  */
 
 /* ABOUT-SECTION */
@@ -305,7 +278,7 @@ header {
 }
 /* CONTACT-SECTION */
 
-/* WORKS-SECTION */
+/* WORKS-SECTION ------------------------------------------ */
 .works-section__sidebar {
   position: fixed;
 }
