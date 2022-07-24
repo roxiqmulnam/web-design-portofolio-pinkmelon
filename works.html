@@ -4,72 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/responsive.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <!-- Header Start -->
     <header>
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <a href="index.html">Pink<span>Melon</span></a>
-          </div>
-          <div class="navbar__menu">
-            <!-- <button class="navbar__hamburger"></button> -->
-            <nav>
-              <ul>
-                <li>
-                  <a class="text-desc" href="index.html">Home</a>
-                </li>
-                <li>
-                  <a class="text-desc" href="works.html">Works</a>
-                </li>
-                <li>
-                  <a class="text-desc" href="index.html#about">About Me</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+      <nav class="navbar__menu">
+        <div class="logo">
+          <a href="index.html">Pink<span>Melon</span></a>
         </div>
-      </div>
+        <ul class="mobile-navbar">
+          <li><a class="text-desc" href="works.html">Works</a></li>
+          <li><a class="text-desc" href="#about">About Me</a></li>
+        </ul>
+        <div class="btn-mobile-navbar">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
     </header>
     <!-- Header End -->
     <!-- Works Start -->
-    <section id="works-section">
+    <main>
       <div class="container">
-        <div class="works-section__sidebar">
-          <h1 class="title">Artworks</h1>
-          <ul>
-            <li><a class="text-desc" href="#">Illustration</a></li>
-            <li><a class="text-desc" href="#">Pixel</a></li>
-            <li><a class="text-desc" href="#">Icon Set</a></li>
-          </ul>
-        </div>
-        <div class="works-section__main-content">
-          <div class="works-section__main-content--items">
-            <a href="detail.html">
-              <img class="item" src="./public/img/pict-1.png" alt="img" />
-            </a>
-            <a href="detail.html">
-              <img class="item" src="./public/img/pict-2.svg" alt="img" />
-            </a>
-            <a href="detail.html">
-              <img class="item" src="./public/img/pict-3.svg" alt="img" />
-            </a>
-            <a href="detail.html">
-              <img class="item" src="./public/img/pict-2.svg" alt="img" />
-            </a>
-            <a href="detail.html">
-              <img class="item" src="./public/img/pict-1.png" alt="img" />
-            </a>
-            <a href="detail.html">
-              <img class="item" src="./public/img/pict-3.svg" alt="img" />
-            </a>
+        <section id="works-section">
+          <div class="works-section__sidebar">
+            <h1 class="title">Artworks</h1>
+            <ul>
+              <li><a class="text-desc" href="#">Illustration</a></li>
+              <li><a class="text-desc" href="#">Pixel</a></li>
+              <li><a class="text-desc" href="#">Icon Set</a></li>
+            </ul>
           </div>
-        </div>
+          <div class="works-section__main-content">
+            <div class="works-section__main-content--items">
+              <a href="detail.html">
+                <img class="item" src="./public/img/pict-1.png" alt="img" />
+              </a>
+              <a href="detail.html">
+                <img class="item" src="./public/img/pict-2.svg" alt="img" />
+              </a>
+              <a href="detail.html">
+                <img class="item" src="./public/img/pict-3.svg" alt="img" />
+              </a>
+              <a href="detail.html">
+                <img class="item" src="./public/img/pict-2.svg" alt="img" />
+              </a>
+              <a href="detail.html">
+                <img class="item" src="./public/img/pict-1.png" alt="img" />
+              </a>
+              <a href="detail.html">
+                <img class="item" src="./public/img/pict-3.svg" alt="img" />
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </main>
     <!-- Works End -->
     <!-- Footer Start  -->
     <footer class="footer">
@@ -78,5 +72,6 @@
       </div>
     </footer>
     <!-- Footer End  -->
+    <script src="/public/js/main.js"></script>
   </body>
 </html>

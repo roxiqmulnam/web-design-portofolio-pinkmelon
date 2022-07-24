@@ -1,27 +1,118 @@
+:root {
+  --primary-color: #fff1eb;
+  --secondary-color: #ffd5c2;
+  --font-color-green: #899d78;
+  --font-color-green-bold: #36413e;
+  --font-color-pink: #e79888;
+  --font-color-pink-bold: #9e4359;
+}
 @media screen and (max-width: 1020px) {
   .container {
     padding: 0 25px;
   }
+  section {
+    margin: 50px 0;
+  }
+  nav {
+    position: sticky;
+    padding: 10px 0;
+  }
+  .navbar__menu {
+    padding: 20px 25px;
+  }
+  .mobile-navbar {
+    position: absolute;
+    right: 0;
+    top: 80%;
+    width: 160px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--font-color-green);
+    align-items: center;
+    transform: translateX(100%);
+    z-index: 1;
+    border-radius: 15px;
+  }
+  .mobile-navbar a {
+    font-size: calc(1rem + 1vw);
+    margin: 10px 0;
+  }
+  .btn-mobile-navbar {
+    display: inline-block;
+    z-index: 1;
+  }
+  .mobile-navbar.open {
+    transform: translateX(0%);
+  }
+  .hero-section {
+    align-items: center;
+  }
+  .hero-section__left {
+    width: 50%;
+  }
+  .item img {
+    margin-right: 40px;
+  }
+  #about {
+    background-size: contain;
+  }
+  .about-section__left {
+    display: flex;
+    align-items: center;
+  }
+  .about-image {
+    height: 50vw;
+  }
+  .about-section__right {
+    width: 50%;
+  }
+  .contact-section {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 760px) {
-  section {
-    margin: 50px 0;
+  .bg-img {
+    background-size: 90vh;
+  }
+  .button {
+    width: 170px;
+    height: 45px;
+    font-size: 18px;
   }
   .hero-section__left {
     width: 100%;
   }
   .hero-image {
-    display: block;
+    display: none;
+  }
+  .highlight-works {
     margin: 50px 0;
   }
-  .hero-section {
-    display: block;
-    margin: 150px 0;
+  #about {
+    background-size: contain;
+  }
+  .about-section {
+    display: inline;
+  }
+  .about-image {
+    margin-bottom: 20px;
+    height: 300px;
+  }
+  .about-section__left {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .about-section__right {
+    width: 100%;
+  }
+  .about-section__right .item {
+    margin: 0 20px 0 0;
   }
   .contact-section {
     width: 100%;
-    background: var(--secondary-color);
     border-radius: 30px;
     padding: 20px 25px;
     margin: 0 auto;
