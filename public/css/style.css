@@ -117,7 +117,6 @@ header {
 .hero-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .hero-section__left {
   width: 55%;
@@ -155,39 +154,30 @@ header {
 }
 .highlight-works {
   position: relative;
-  /* height: 45vh; */
+  height: 45vh;
   overflow: hidden;
-  cursor: grab;
-  margin-top: 100px;
+  margin: 100px 0 50px 0;
 }
 .slider-wrap {
-  /* position: absolute;
-  top: 50;
-  left: 0;
   display: flex;
-  justify-content: space-between;
-  pointer-events: none; */
+  width: 100%;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* for firefox */
+}
+.slider-wrap::-webkit-scrollbar { /* for chrome */
+  display: none;
+}
 
-  height: 100vh;
-  display: inline-flex;
-  overflow: hidden;
-  scrollbar-width: none;
-  transform: translateX(0);
-  cursor: grab;
-}
-.item {
-  max-height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
 .item img {
-  height: 25vh;
+  width: 200px;
   border-radius: 25px;
   object-fit: cover;
-  margin-right: 80px;
+  margin-right: 75px;
+  scroll-snap-align: start;
+  user-select: none;
 }
 .btn-more {
   display: flex;
@@ -294,8 +284,7 @@ header {
 }
 /* CONTACT-SECTION */
 
-/* WORKS-PAGE ------------------------------------------ */
-/* WORKS-SECTION */
+/* WORKS-SECTION ------------------------------------------ */
 .works-section__sidebar {
   position: fixed;
 }
@@ -368,9 +357,3 @@ header {
   align-items: center;
 }
 /* FOOTER  */
-
-/* WORKS-PAGE ------------------------------------------ */
-
-/* DETAIL-PAGE ------------------------------------------ */
-
-/* DETAIL-PAGE ------------------------------------------ */

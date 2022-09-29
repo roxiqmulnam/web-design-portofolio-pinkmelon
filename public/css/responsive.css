@@ -88,7 +88,8 @@
     display: none;
   }
   .highlight-works {
-    margin-top:50px;
+    margin: 50px 0;
+    height: 35vh;
   }
   #about {
     background-size: contain;
