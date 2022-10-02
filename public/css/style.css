@@ -19,13 +19,19 @@
   font-family: "Poppins", sans-serif;
   scroll-margin-top: 6rem;
 }
-/* GLOBAL--text */
 
+/* GLOBAL--text */
+::placeholder {
+  color: var(--secondary-color);
+}
 .text-desc {
   font-size: 22px;
   color: var(--font-color-green);
 }
 .text-desc:hover {
+  color: var(--font-color-pink);
+}
+.text-desc:after {
   color: var(--font-color-pink);
 }
 .text-desc:focus {
@@ -117,6 +123,7 @@ header {
 .hero-section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .hero-section__left {
   width: 55%;
@@ -154,7 +161,6 @@ header {
 }
 .highlight-works {
   position: relative;
-  height: 45vh;
   overflow: hidden;
   margin: 100px 0 50px 0;
 }
@@ -167,11 +173,12 @@ header {
   scroll-behavior: smooth;
   scrollbar-width: none; /* for firefox */
 }
-.slider-wrap::-webkit-scrollbar { /* for chrome */
+.slider-wrap::-webkit-scrollbar {
+  /* for chrome */
   display: none;
 }
 
-.item img {
+.item {
   width: 200px;
   border-radius: 25px;
   object-fit: cover;
