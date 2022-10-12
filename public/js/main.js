@@ -1,4 +1,60 @@
+let section = document.querySelectorAll("section");
+let lists = document.querySelectorAll(".text-desc");
+let buttonToTop = document.querySelector(".button--to-top");
+
+const activeLink = (li) => {
+  lists.forEach((item) => item.classList.remove("active"));
+  li.classList.add("active");
+};
+lists.forEach((item) =>
+  item.addEventListener("click", () => {
+    activeLink(this);
+  })
+);
+
+const scrollFunction = () => {
+  buttonToTop.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    buttonToTop.style.display = "block";
+  } else {
+    buttonToTop.style.display = "none";
+  }
+};
+
+window.onscroll = () => {
+  for (let i = 0; i < section.length; i++) {
+    let idSection = section[i];
+    let top = window.scrollY;
+    let offset = idSection.offsetTop - 150;
+    let height = idSection.offsetHeight - 400;
+    let id = idSection.getAttribute("id");
+    if (top >= offset && top < offset + height) {
+      const target = document.querySelector(`[href='#${id}']`);
+      activeLink(target);
+    }
+  }
+  scrollFunction();
+};
+
+// active hover
+
+const navbar = document.querySelector(".navbar__menu");
+for (let i = 0; i < lists.length; i++) {
+  lists[i].addEventListener("click", function () {
+    let current = document.querySelectorAll(".active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
 // mobile navbar
+
 const mobileMenu = document.querySelector(".btn-mobile-navbar");
 const linkNavbar = document.querySelector(".mobile-navbar");
 
@@ -10,44 +66,6 @@ linkNavbar.addEventListener("click", function () {
 });
 
 // slider
-
-// const container = document.querySelector(".highlight-works");
-// const slider = document.querySelector(".slider-wrap");
-
-// let isPressedDown = false;
-// let cursorXSpace;
-
-// container.addEventListener("mousedown", (e) => {
-//   isPressedDown = true;
-//   cursorXSpace = e.offsetX - slider.offsetLeft;
-//   container.style.cursor = "grabbing";
-// });
-
-// container.addEventListener("mouseup", () => {
-//   container.style.cursor = "grab";
-// });
-
-// window.addEventListener("mouseup", () => {
-//   isPressedDown = false;
-// });
-
-// container.addEventListener("mousemove", (e) => {
-//   if (!isPressedDown) return;
-//   e.preventDefault();
-//   slider.style.left = `${e.offsetX - cursorXSpace}px`;
-//   boundslider();
-// });
-
-// function boundslider() {
-//   const container_rect = container.getBoundingClientRect();
-//   const slider_rect = slider.getBoundingClientRect();
-
-//   return parseInt(slider.style.left) > 0
-//     ? (slider.style.left = 0)
-//     : slider_rect.right < container_rect.right
-//     ? (slider.style.left = `-${slider_rect.width - container_rect.width}px`)
-//     : "";
-// }
 
 const wrapper = document.querySelector(".slider-wrap");
 

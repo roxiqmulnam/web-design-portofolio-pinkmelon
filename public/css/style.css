@@ -17,7 +17,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "Poppins", sans-serif;
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 100px;
 }
 
 /* GLOBAL--text */
@@ -29,19 +29,19 @@
   color: var(--font-color-green);
 }
 .text-desc:hover {
-  color: var(--font-color-pink);
-}
-.text-desc:after {
-  color: var(--font-color-pink);
-}
-.text-desc:focus {
   color: var(--font-color-pink-bold);
+}
+.active {
+  color: var(--font-color-pink);
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 .title {
   margin: 20px 0;
   font-weight: 900;
   color: var(--font-color-green-bold);
 }
+
 /* GLOBAL--text */
 body {
   background: var(--primary-color);
@@ -72,7 +72,6 @@ header {
   display: flex;
 }
 .mobile-navbar a {
-  color: black;
   letter-spacing: 2px;
   font-size: 20px;
   margin: 20px 25px;
@@ -111,6 +110,15 @@ header {
 }
 .button:hover {
   background: var(--font-color-pink-bold);
+}
+.button--to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: -100px;
+  z-index: 99;
+  width: auto;
+  padding: 0 10px;
 }
 /* GLOBAL */
 

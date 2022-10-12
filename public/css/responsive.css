@@ -7,6 +7,12 @@
   --font-color-pink-bold: #9e4359;
 }
 @media screen and (max-width: 1020px) {
+  .text-desc{
+    color: var(--font-color-pink);
+  }
+  .active {
+    color: var(--font-color-pink-bold);
+  }
   .container {
     padding: 0 25px;
   }
@@ -134,6 +140,12 @@
 
 /* WORKS PAGE ---------------------------------------------- */
 @media screen and (max-width: 1020px) {
+  .button--to-top {
+    right: 20px;
+    padding: 10px 20px;
+    width: auto;
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 760px) {
